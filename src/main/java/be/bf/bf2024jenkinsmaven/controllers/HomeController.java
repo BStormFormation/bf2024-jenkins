@@ -11,6 +11,7 @@ public class HomeController {
     @RequestMapping(path = {"", "/"})
     public String homeAction(Map<String, Object> model) {
         model.put("name", "Kenobi");
+        model.put("Demo", "Demo");
         return "home/index";
     }
 }
